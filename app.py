@@ -37,7 +37,7 @@ def reseat():
 @app.route('/')
 def main():
     print(currentalerts)
-    return render_template('schoolapp.html',alert= alerts, currentalert = currentalerts)
+    return render_template('index.html',alert= alerts, currentalert = currentalerts)
 @app.route('/writealert',methods=['GET', 'POST'])
 def writealert():
     global currentalerts
